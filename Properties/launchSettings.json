@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ReverseGeocoder (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ReverseGeocoder (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="ReverseGeocoder.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ReverseGeocoder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:diffplex="using:DiffPlex.UI"
+    mc:Ignorable="d">
+
+    <ScrollViewer>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Latitude, Longitude:" />
+                <TextBox x:Name="LatLong" Text="49.2836856669128, -123.11746717038321" />
+            </StackPanel>
+            <Button x:Name="ReverseGeocode" Content="Reverse Geocode" Click="ReverseGeocode_Click" />
+            <TextBlock x:Name="ErrorBox" Foreground="Red" />
+
+            <diffplex:DiffTextView x:Name="DiffView" IsFileMenuEnabled="false" Visibility="Collapsed" />
+        </StackPanel>
+    </ScrollViewer>
+</Window>
